@@ -1,12 +1,57 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#09C"
+    android:layout_height="180dp"
+    android:background="@drawable/bg"
     android:padding="@dimen/widget_margin">
-
-    <ImageView
+    <TextView
+        android:id="@+id/hitokoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:padding="3dp"
+        android:text="数据来自：一言API"
         />
+    <TextView
+        android:id="@+id/hitokoto_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:padding="3dp"
+        android:text="ID:1043"
+        />
+    <TextView
+        android:layout_below="@id/hitokoto_id"
+        android:id="@+id/hitokoto_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:padding="12dp"
+        android:textSize="15sp"
+        android:text="身为冒险者，如果安静的老死在床上，那简直就是耻辱！"
+        />
+
+    <TextView
+        android:id="@+id/hitokoto_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hitokoto_text"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:text="TO:恶魔法则"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/hitokoto_Creator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hitokoto_from"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:textSize="15sp"
+        android:text="Creator:942903628"
+        android:textColor="#000" />
 
 </RelativeLayout>

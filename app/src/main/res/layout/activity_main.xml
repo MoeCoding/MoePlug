@@ -4,15 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.luncode.moeplug.MainActivity">
 
     <TextView
+        android:id="@+id/text_about"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="关于此软件信息\n版本：1.0"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/text_anther"
+        android:layout_below="@id/text_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="作者：Luncode\n桌面插件间隔30秒刷新一次\n后面将会更新手动设置刷新时间\n感谢大家的使用拜拜了"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/text_libs"
+        android:layout_below="@id/text_anther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="使用的第三方库\nokhttp3\nGson\n第三方api\n一言"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_below="@id/text_libs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pic" />
 
 </RelativeLayout>
