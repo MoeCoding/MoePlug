@@ -40,7 +40,7 @@ public class HitokotoWidget extends AppWidgetProvider {
             public void run() {
                 Hitokoto();
                 appWidgetManager.updateAppWidget(appWidgetId,views);
-                handler.postDelayed(this,60*1000);
+                handler.postDelayed(this,30*1000);
             }
         };
         runnable.run();
